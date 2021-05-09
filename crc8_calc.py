@@ -46,7 +46,7 @@ def code_generation(type_code, code_temp):
     elif type_code == '4 - код -> серия, номер':
         code_temp1 = convert_base(code_temp[8:10], 10, 16)
         code_temp2 = convert_base(code_temp[10:14], 10, 16)
-        code_end =  code_temp1 + ',' + code_temp2
+        code_end =  code_temp1 + ' ' + code_temp2
         return code_end
 
     x = int(code_end, 16)
