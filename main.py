@@ -7,6 +7,7 @@ from pyperclip import copy
 
 def lbl_any(text_label, row_number, column_number=1):
     global window
+    
     lbl = Label(window, text=text_label, font=("Arial Bold", 11))
     lbl.grid(row=row_number, column=column_number)
 
