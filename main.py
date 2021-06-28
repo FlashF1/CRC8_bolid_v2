@@ -1,4 +1,8 @@
 
+''' Рисуем визуальный интерфейс для программы по
+расчету контрольной суммы.
+'''
+
 import crc8_calc
 from tkinter import *
 from tkinter.ttk import Combobox 

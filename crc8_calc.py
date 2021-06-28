@@ -4,10 +4,10 @@ import crcmod.predefined
 
 def convert_base(num, to_base=10, from_base=10):
     ''' Конвертация числа из одной системы счисления в другую.
+    Сначала конвертируем в 10й систему.
+    Далее уже конвертируем в 'to_base' систему.
     '''
-    # Сначала конвертируем в 10й систему.
     n = int(num, from_base) if isinstance(num, str) else num
-    # Далее уже конвертируем в 'to_base' систему.
     alphabet = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     res = ""
     while n > 0:
